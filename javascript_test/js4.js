@@ -11,7 +11,7 @@
     let days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
     let now = new Date()
     let day = now.getDay() - 4
-    if(day < 0) day += 6
+    if(day < 0) day += 7
 
     return days[day]
   }
