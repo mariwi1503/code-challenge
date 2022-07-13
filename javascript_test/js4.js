@@ -8,9 +8,10 @@
  */
  function result() {
     // write your code here
-    let days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+    let days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
     let now = new Date()
-    let day = now.getDay() - 4 + 6
+    let day = now.getDay() - 4
+    if(day < 0) day += 6
 
     return days[day]
   }
